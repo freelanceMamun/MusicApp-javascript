@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music app</title>
+    <link rel="stylesheet" href="Style.css">
+    <!-- font link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     <!-- google font -->
+     <link href="https://fonts.googleapis.com/css2?family=Hurricane&family=Poppins:wght@100;200;300;400;500;600;700;900&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div class="mainbox">
+       <div class="wrapper">
+            <div class="music_content">
+                 <div class="title">
+                    <marquee behavior="scroll" scrollamount="4" direction="">
+                        <span class="title_text" id="title_text">song = 5 /5</span>
+                    </marquee> 
+                    
+                </div>
+                 <div class="music_img"><img src="/image/Ee-Raathale-Lyrics-Radhe-Shyam.png" alt=""></div>
+                 <div class="music_name"><span class="" id="">Hello contgetn</span></div>             
+            </div>
+            <div class="update_slider">
+                 <div class="Time_douration">
+                      <span id="setUpdate_timer">00 : 00</span>
+                      <input id="timer_dourtaion" type="range" min="0" max="100" onchange="seekTo()" value="0" >
+                      <span class="total_douration_timer">00 : 00</span>
+                 </div>
+                 <div class="Volume">
+                     <span class="low"><i class="fa-solid fa-volume-low"></i></span>
+                     <input type="range" min="0" max="100" value="40" onchange="SoundVolume()" id="Volume_setup">
+                     <span class="high"><i class="fa-solid fa-volume-high"></i></span>
+                 </div>
+            </div>
+            <!-- Controls music -->
+            <div class="Button_container music_controls">
+                 <div class="allBtn">
+                      <button class="randomTrack"><i class="fa-solid fa-shuffle"></i></button>
+                      <button class="prev_music"><i class="fa-solid fa-backward-step"></i></button>
+                      <button class="Play_pouse" onclick="playpauseTrack()"><i class="fa-solid fa-play"></i></button>
+                      <button class="next_music"><i class="fa-solid fa-forward-step"></i></button>
+                      <button class="Repate_music"><i class="fa-solid fa-rotate"></i></button>
+                 </div>
+            </div>
+            <div class="animation_div">
+                <span class="frist_span"></span>
+                <span class="frist_span"></span>
+                <span class="frist_span"></span>
+                <span class="frist_span"></span>
+                <span class="frist_span"></span>
+                <span class="frist_span"></span>
+                <span class="frist_span"></span>
+                <span class="frist_span"></span>
+                <span class="frist_span"></span>
+                <span class="frist_span"></span>
+            </div>
+       </div>
+   </div>
+
+ <script src="app.js"></script>
+
+</body>
+</html>
