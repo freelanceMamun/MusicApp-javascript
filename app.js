@@ -141,7 +141,7 @@ next_music.addEventListener("click",function(){
 
 // prev music 
 function PrevMusciPlay(){
-    if(isPlaying > 0){
+    if(music_index > 0){
         music_index -= 1 ;
     }else{
         music_index = music_list.length - 1 ;
